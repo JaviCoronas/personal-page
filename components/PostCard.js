@@ -14,7 +14,7 @@ export async function getStaticProps({ params: { slug } }) {
 
 export const PostCard = ({ slug, content }) => {
   return (
-        <Card key={slug} css={{ w: "100%", h: "300px", maxW: '1000px', margin: '5px'}}>
+        <Card css={{ w: "100%", h: "300px", maxW: '1000px', margin: '5px'}}>
           <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
             <Col>
               <Text size={18} weight="bold" css={{color: "$primary"}}>

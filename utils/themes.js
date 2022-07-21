@@ -15,8 +15,8 @@ export const lightTheme = createTheme({
       primarySolidHover: '$green700',
       primarySolidContrast: '$white',
       primaryShadow: '$green500',
-      background: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
-      backgroundColor: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
+      background: 'red',
+      backgroundColor: 'red',
 
       gradient: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
       link: '#5E1DAD',
@@ -36,7 +36,7 @@ export const darkTheme = createTheme({
   theme: {
     colors: {
       // brand colors
-            background: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
+            background: 'blue',
       backgroundColor: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
       text: '#fff',
       // you can also create your own color
