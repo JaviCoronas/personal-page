@@ -15,8 +15,8 @@ export const lightTheme = createTheme({
       primarySolidHover: '$green700',
       primarySolidContrast: '$white',
       primaryShadow: '$green500',
-      background: 'red',
-      backgroundColor: 'red',
+      background: 'linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%)',
+      backgroundColor: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
 
       gradient: 'linear-gradient(112deg, $blue100 -25%, $pink500 -10%, $purple500 80%)',
       link: '#5E1DAD',

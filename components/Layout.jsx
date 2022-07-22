@@ -10,15 +10,17 @@ export default function Layout({ children }) {
   const context = useContext(AppContext);
   const { setTheme } = useNextTheme();
   const { isDark, type } = useTheme();
+  const { theme } = useTheme();
 
-  const handleChange = () => {
-    const nextTheme = isDark ? "light" : "dark";
-    //context.setIsDark(isDark ? true : false);
-    changeTheme(nextTheme);
+  const handleChange = (e) => {
+    setTheme(e.target.checked ? "dark" : "light");
   };
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div
+      className="flex flex-col min-h-screen"
+      style={{ background: theme.colors.background.value }}
+    >
       <header className="bg-white-100 mb-8 py-4">
         <div className="flex mx-auto">
           <Link href="/">
@@ -32,7 +34,7 @@ export default function Layout({ children }) {
             iconOn={<SunIcon filled />}
             iconOff={<MoonIcon filled />}
             checked={isDark}
-            onChange={(e) => setTheme(e.target.checked ? "dark" : "light")}
+            onChange={handleChange}
           />
         </div>
       </header>
